@@ -1,21 +1,21 @@
-# app
+<h1>App que recebe dados da API</h1>
 
-## Project setup
+<h3>Instalar dependencias</h3>
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+<h3>Rodando o servidor para desenvolvimento</h3>
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+<h3>Compilando para produção</h3>
 ```
 npm run build
 ```
 
-### Run your unit tests
+<h3>Rodar testes unitarios</h3>
 ```
 npm run test:unit
 ```
@@ -24,6 +24,3 @@ npm run test:unit
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
