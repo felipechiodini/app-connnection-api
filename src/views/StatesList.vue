@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="row bg-danger" v-for="(cidade, key) in cidades" :key="key">
+        <div class="row bg-danger" v-for="(cidade, key) in states" :key="key">
             <div class="col-12 bg-info">
                 <label><b>Nome:</b> {{ cidade.name }}</label>
                 <label><b>Sigla:</b> {{ cidade.uf }}</label>
@@ -9,21 +9,23 @@
     </div>
 </template>
 
+
 <script>
+
 import axios from 'axios'
 
 export default {
 
     mounted() {
-        axios.get('http://localhost:3000/cidades')
+        axios.get('http://localhost:3000/estados')
         .then((response) => {
-            this.cidades = response.data
+            this.states = response.data
         })
     },
 
     data: () => {
         return {
-            cidades: []
+            states: []
         }
     },
 

@@ -18,6 +18,12 @@ const routes = [
     path: '/cidades',
     name: 'Cidades',
     component: () => import('../views/CitiesList.vue')
+  },
+
+  {
+    path: '/estados',
+    name: 'Estados',
+    component: () => import('../views/StatesList.vue')
   }
 ]
 
